@@ -1,0 +1,21 @@
+# serverless.yml
+service: telegram-bot-zobot-status
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+  region: us-west-1
+  memorySize: 512
+
+functions:
+  zobot_status:
+    handler: handler.zobot_status
+    events:
+      - http:
+          path: zobot_status/{exchange}/{pair}
+          method: get
+          cors: true
+
+plugins:
+  - serverless-offline

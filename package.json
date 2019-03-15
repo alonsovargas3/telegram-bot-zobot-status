@@ -1,0 +1,29 @@
+{
+  "name": "telegram-bot-zobot-status",
+  "version": "1.0.0",
+  "description": "Provides status on Zobot calls for the Telegram bot",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonsovargas3/telegram-bot-zobot-status.git"
+  },
+  "author": "Alonso Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alonsovargas3/telegram-bot-zobot-status/issues"
+  },
+  "homepage": "https://github.com/alonsovargas3/telegram-bot-zobot-status#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "serverless": "^1.38.0",
+    "serverless-http": "^1.9.1",
+    "serverless-offline": "^4.9.0"
+  }
+}
